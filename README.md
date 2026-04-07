@@ -18,5 +18,5 @@ Install `uv`.
 
 ## Commandline Options
 
-Append `--skip-synthesis` to only flash to device and skip synthesizing/P&L.
-Append `--write-flash` or `-f` to write to the flash.
+- `--skip-synthesis` to only flash to device and skip synthesizing/P&L.
+- `--write-flash` or `-f` to write to the flash.
