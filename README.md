@@ -11,6 +11,8 @@ If needed, enable [udev rules](https://trabucayre.github.io/openFPGALoader/guide
 
 Install `uv`.
 
+To simulate the design, install `verilator`. The package in Ubuntu repository is relatively old, building your own version of verilator is recommanded.
+
 ## Howto
 
 1. `uv sync`
@@ -20,3 +22,8 @@ Install `uv`.
 
 - `--skip-synthesis` to only flash to device and skip synthesizing/P&L.
 - `--write-flash` or `-f` to write to the flash.
+
+## Simulation
+
+Basic simulation by `verilator` is implemented, run `make` in `sim/` and vcd waveform will be created under `sim/logs/`.
+Waveform viewers such as GTKWave or vaporview are available.

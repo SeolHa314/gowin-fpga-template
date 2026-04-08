@@ -12,3 +12,9 @@ wheels/
 # delete all files in fpga_build except .gitkeep
 fpga_build/*
 !fpga_build/.gitkeep
+
+# verilator generated files
+obj_dir/
+
+# AI generated files
+.codex
