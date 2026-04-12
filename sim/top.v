@@ -1,11 +1,11 @@
 `define clkcnt 24'd4
-`include "blink.v"
+`include "impl.v"
 
 module top
 (
   input clk,          // clk input
   input rst_n,        // reset input
-  output [5:0] leds = 6'b111110      // 6 LEDS pin
+  output [5:0] leds     // 6 LEDS pin
 );
 
   led blinker(
@@ -23,5 +23,11 @@ module top
     end
     $display("[%0t] Model running...\n", $time);
   end
+
+  // initial begin
+  //   rst_n = 0;
+  //   #10;
+  //   rst_n = 1;
+  // end
 
 endmodule
